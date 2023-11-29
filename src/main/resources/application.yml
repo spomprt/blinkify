@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/weightminder
+    username: spomprt
+    password: spomprt
+
+cache:
+  redis:
+    host: localhost
+    port: 6379
