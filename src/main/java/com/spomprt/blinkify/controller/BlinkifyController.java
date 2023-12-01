@@ -11,6 +11,11 @@ import java.io.IOException;
 @RequestMapping("/blinkify/api/v1")
 public class BlinkifyController {
 
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello World!";
+    }
+
     @GetMapping
     public void redirect(
             HttpServletResponse response
