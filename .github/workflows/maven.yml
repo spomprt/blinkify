@@ -36,7 +36,7 @@ jobs:
           tags: docker.io/spomprt1/blinkify:latest
 
       - name: executing remote ssh commands using password
-        uses: actions/checkout@v2
+        uses: appleboy/ssh-action@v0.1.9
         with:
           host: ${{ secrets.HOST_ADDRESS }}
           username: ${{ secrets.HOST_USER }}
