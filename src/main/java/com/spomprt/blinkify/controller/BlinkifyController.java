@@ -16,6 +16,11 @@ public class BlinkifyController {
         return "Hello World!";
     }
 
+    @GetMapping("/success")
+    public String itsWork() {
+        return "success!!!";
+    }
+
     @GetMapping
     public void redirect(
             HttpServletResponse response
