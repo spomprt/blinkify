@@ -11,6 +11,4 @@ FROM bellsoft/liberica-openjdk-alpine-musl:17.0.6-10
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
-EXPOSE 8080
-
 ENTRYPOINT ["java","-Xmx64m","-jar","app.jar"]
