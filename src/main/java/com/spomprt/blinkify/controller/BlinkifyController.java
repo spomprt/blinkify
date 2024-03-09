@@ -34,7 +34,7 @@ public class BlinkifyController {
             HttpServletResponse response,
             @PathVariable("shortUrl") String shortUrl
     ) {
-        log.info("Get original url from {}", shortUrl);
+        log.debug("Get original url from {}", shortUrl);
         try {
             String original = urlShortenerService.getOriginal(shortUrl);
             response.sendRedirect(original);
